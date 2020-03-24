@@ -6,15 +6,13 @@
       </script>
 
       <script type = "text/javascript" language = "javascript">
-         $(document).ready(function() {
-            $("div").click(function() {alert("Hello, world!");});
+         $( "#a" ).load( "textfile.txt" );
          });
       </script>
    </head>
 	
    <body>
-      <div id = "mydiv">
-         Click on this to see a dialogue box.
+      <div id = "a">
       </div>
    </body>
 </html>
