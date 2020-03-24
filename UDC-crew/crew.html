@@ -158,7 +158,7 @@
     </div>
   </div>
 
-  <!--MEMBERS SECTION-->
+  <!--MEMBERS SECTION-->members
 
   <div class="member-section">
 
@@ -171,8 +171,14 @@
 
         <div class="slick-item-custom"> <img src="assets/Members/m1.jpg" class="member-pic"><br />
           <div class="text-center member-body">
-            <p><b>NAME: </b> PRANJAL KULSHRESHTHA </p>
-            <p><b>COURSE: </b> B.A. (J&MC), 2nd YEAR </p>
+            <script>
+              $(document).ready(function){
+                var MemberName;
+                $.getJSON('test.json', function(data) {
+                  MemberName= members.Name;
+                  console.log(MemberName);
+                });
+              });
           </div>
         </div>
 
